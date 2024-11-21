@@ -7,44 +7,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <h1>Gin do Botico</h1>
-        <p>Sabor e Tradição Engarrafados</p>
+        <div class="logo">
+            <h1>Gin do Botico</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="banner">
-        <img src="banner-image.jpg" alt="Gin do Botico">
+    <!-- Banner -->
+    <section class="banner">
+        <h2>O melhor gin artesanal do Alentejo</h2>
+        <p>Com um sabor único e incomparável. Conheça agora!</p>
     </section>
 
-    <section id="produtos">
-        <h2>Nossos Produtos</h2>
+    <!-- Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Produtos</h2>
         <div class="produto">
-            <img src="https://pecadosdoalentejo.pt/804-thickbox_default/piteira-gin-500ml-monte-do-botico-velho.jpg" alt="Gin Monte do Botico Velho" width="300">
-
-            <p>Segredo da Patroa Gin - 500ml - Monte do Botico Velho</p>
-            <p>Preço: € 29,50</p>
+            <img src="https://pecadosdoalentejo.pt/804-thickbox_default/piteira-gin-500ml-monte-do-botico-velho.jpg" alt="Gin Monte do Botico Velho">
+            <h3>Gin Monte do Botico Velho</h3>
+            <p>Gin artesanal com um sabor único e delicioso. Disponível em garrafas de 500ml.</p>
+            <p class="preco">€29.99</p>
+            <button class="comprar">Comprar</button>
         </div>
         <div class="produto">
-            <img src="gin2.jpg" alt="Gin 2">
-            <p>Gin Artesanal</p>
-            <p>Preço: € 29,50</p>
+            <img src="https://pecadosdoalentejo.pt/804-thickbox_default/piteira-gin-500ml-monte-do-botico-velho.jpg" alt="Gin Monte do Botico Velho">
+            <h3>Gin Monte do Botico Velho</h3>
+            <p>Gin artesanal com um sabor único e delicioso. Disponível em garrafas de 500ml.</p>
+            <p class="preco">€29.99</p>
+            <button class="comprar">Comprar</button>
         </div>
     </section>
 
-    <section id="sobre">
-        <h2>Sobre o Gin do Botico</h2>
-        <p>Somos uma destilaria artesanal, que traz o verdadeiro sabor do gin.</p>
-    </section>
-
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Email: contato@gindobotico.com</p>
-    </section>
-
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2024 Gin do Botico - Todos os direitos reservados</p>
+        <p>&copy; 2024 Gin do Botico. Todos os direitos reservados.</p>
+        <div class="social">
+            <a href="#">Instagram</a> | <a href="#">Facebook</a>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
