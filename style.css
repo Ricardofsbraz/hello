@@ -1,0 +1,131 @@
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Cor de fundo branca */
+    color: #333; /* Texto escuro */
+    line-height: 1.6; /* Melhor leitura */
+}
+
+/* Header */
+header {
+    background-color: #F7C600; /* Amarelo suave */
+    color: white; /* Texto branco */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 0; /* Garantir que não tenha margem extra */
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.4em;
+    margin-top: 5px;
+}
+
+/* Banner */
+#banner {
+    margin-bottom: 0; /* Removendo margem extra abaixo do banner */
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Produtos */
+#produtos {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap; /* Para responsividade */
+    padding: 40px 20px;
+    margin-top: 0; /* Removendo a margem extra entre o banner e os produtos */
+}
+
+.produto {
+    background-color: #fff;
+    padding: 30px; /* Aumentando o padding */
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
+    text-align: center;
+    width: 320px; /* Aumentando a largura do produto */
+    transition: transform 0.3s ease;
+    border: 2px solid #F7C600; /* Borda amarela suave */
+    margin-bottom: 40px;
+}
+
+.produto:hover {
+    transform: scale(1.05); /* Efeito de zoom */
+}
+
+.produto img {
+    width: 100%;
+    max-height: 250px; /* Tamanho da imagem maior */
+    object-fit: cover; /* Para manter o formato sem distorcer a imagem */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    font-size: 1.5em; /* Tamanho do título do produto */
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.produto .preco {
+    font-size: 1.5em;
+    color: #F7C600; /* Cor amarela para destaque */
+    font-weight: bold;
+}
+
+/* Seção sobre */
+#sobre {
+    background-color: #F7C600; /* Amarelo suave */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+/* Contato */
+#contato {
+    background-color: #fff;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #F7C600; /* Amarelo suave */
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+footer p {
+    font-size: 1em;
+}
