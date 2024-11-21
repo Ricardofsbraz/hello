@@ -1,131 +1,144 @@
-/* Resetando estilos padrões */
+/* Resetando o estilo padrão */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos globais */
+/* Cor de fundo e fontes */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffffff; /* Cor de fundo branca */
-    color: #333; /* Texto escuro */
-    line-height: 1.6; /* Melhor leitura */
+    font-family: Arial, sans-serif;
+    background-color: #fef9e4; /* Amarelo claro */
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Header */
+/* Cabeçalho */
 header {
-    background-color: #F7C600; /* Amarelo suave */
-    color: white; /* Texto branco */
-    padding: 40px 20px;
+    background-color: #f7c600; /* Amarelo forte */
+    padding: 20px;
     text-align: center;
-    border-radius: 0 0 20px 20px;
-    margin-bottom: 0; /* Garantir que não tenha margem extra */
 }
 
-header h1 {
-    font-size: 3.5em;
-    font-weight: bold;
+header .logo h1 {
+    font-size: 2.5rem;
+    color: white;
 }
 
-header p {
-    font-size: 1.4em;
-    margin-top: 5px;
+header nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #333;
 }
 
 /* Banner */
-#banner {
-    margin-bottom: 0; /* Removendo margem extra abaixo do banner */
+.banner {
+    background: url('https://example.com/your-banner-image.jpg') no-repeat center center/cover;
+    height: 300px;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-#banner img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+.banner h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
 }
 
 /* Produtos */
-#produtos {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 30px;
-    flex-wrap: wrap; /* Para responsividade */
-    padding: 40px 20px;
-    margin-top: 0; /* Removendo a margem extra entre o banner e os produtos */
+.produtos {
+    padding: 20px;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .produto {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
     background-color: #fff;
-    padding: 30px; /* Aumentando o padding */
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 320px; /* Aumentando a largura do produto */
-    transition: transform 0.3s ease;
-    border: 2px solid #F7C600; /* Borda amarela suave */
-    margin-bottom: 40px;
-}
-
-.produto:hover {
-    transform: scale(1.05); /* Efeito de zoom */
+    border-radius: 8px;
 }
 
 .produto img {
     width: 100%;
-    max-height: 250px; /* Tamanho da imagem maior */
-    object-fit: cover; /* Para manter o formato sem distorcer a imagem */
-    border-radius: 10px;
-    margin-bottom: 15px;
+    border-radius: 8px;
+    max-height: 300px;
+    object-fit: contain;
 }
 
 .produto h3 {
-    font-size: 1.5em; /* Tamanho do título do produto */
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 
 .produto p {
-    font-size: 1.2em;
+    color: #777;
     margin-bottom: 10px;
 }
 
 .produto .preco {
-    font-size: 1.5em;
-    color: #F7C600; /* Cor amarela para destaque */
+    font-size: 1.4rem;
     font-weight: bold;
+    color: #f7c600; /* Amarelo */
+    margin-bottom: 10px;
 }
 
-/* Seção sobre */
-#sobre {
-    background-color: #F7C600; /* Amarelo suave */
+.produto .comprar {
+    background-color: #f7c600; /* Amarelo */
     color: white;
-    padding: 50px 20px;
-    text-align: center;
-    border-radius: 15px;
-    margin-top: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-/* Contato */
-#contato {
-    background-color: #fff;
-    color: #333;
-    padding: 50px 20px;
-    text-align: center;
-    border-radius: 15px;
-    margin-top: 40px;
+.produto .comprar:hover {
+    background-color: #f39c00; /* Amarelo mais forte */
 }
 
 /* Rodapé */
 footer {
-    text-align: center;
-    background-color: #F7C600; /* Amarelo suave */
+    background-color: #333;
     color: white;
+    text-align: center;
     padding: 20px;
-    margin-top: 40px;
-    border-radius: 20px;
 }
 
-footer p {
-    font-size: 1em;
+footer .social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
+
+footer .social a:hover {
+    text-decoration: underline;
+}
+
