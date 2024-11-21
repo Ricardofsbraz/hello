@@ -7,30 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <h1>Gin do Botico</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <!-- Banner -->
     <section class="banner">
-        <h2>O melhor gin artesanal do Alentejo</h2>
-        <p>Com um sabor único e incomparável. Conheça agora!</p>
-        <a href="#produtos" class="btn-banner">Explorar Produtos</a>
+        <div class="container">
+            <div class="logo">
+                <h1>Gin do Botico</h1>
+            </div>
+            <h2>O melhor gin artesanal do Alentejo</h2>
+            <p>Com um sabor único e incomparável. Conheça agora!</p>
+            <a href="#produtos" class="btn-banner">Explorar Produtos</a>
+        </div>
     </section>
 
     <!-- Produtos -->
     <section id="produtos" class="produtos">
-        <h2>Produtos</h2>
+        <h2>Os Nossos Produtos</h2>
         <div class="produto">
             <img src="https://pecadosdoalentejo.pt/804-thickbox_default/piteira-gin-500ml-monte-do-botico-velho.jpg" alt="Gin Monte do Botico Velho">
             <h3>Gin Monte do Botico Velho</h3>
@@ -45,6 +36,27 @@
             <p class="preco">€29.99</p>
             <a href="#" class="comprar">Comprar</a>
         </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+        <h2>Sobre o Gin do Botico</h2>
+        <p>O Gin do Botico é um produto artesanal feito com os melhores ingredientes da região do Alentejo, proporcionando um sabor único e refinado. A nossa missão é oferecer a melhor experiência para os amantes de gin.</p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <p>Se tiver alguma dúvida, não hesite em nos contactar.</p>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
     </section>
 
     <!-- Rodapé -->
@@ -56,3 +68,4 @@
     </footer>
 </body>
 </html>
+
